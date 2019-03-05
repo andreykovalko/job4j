@@ -28,7 +28,7 @@ public class IdealWeightTest {
     @Test
     public void whenWomanHeight170ThenMassNear69() {
         IdealWeight indexMass = new IdealWeight();
-        double weight = indexMass.manWeight(170);
+        double weight = indexMass.womanWeight(170);
         assertThat(weight, closeTo(69.0, 0.1));
     }
  
