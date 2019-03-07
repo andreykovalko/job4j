@@ -1,4 +1,4 @@
-package ru.idealWeight;
+package ru.idealweight;
 
 import org.junit.Test;
 import static org.hamcrest.number.IsCloseTo.closeTo;

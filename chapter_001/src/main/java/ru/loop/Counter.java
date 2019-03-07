@@ -9,15 +9,17 @@ public class Counter {
     /**
      * Method add
      * Sum even numbers.
+     *
      * @param beginning
      * @param end
      * @return sum.
      */
-    public int add (int beginning, int end) {
+    public int add(int beginning, int end) {
         int sum = 0;
-        for (int i = beginning; i <=end ; i++) {
-          if (i%2==0)
-              sum = sum + i;
+        for (int i = beginning; i <= end; i++) {
+            if (i % 2 == 0) {
+                sum = sum + i;
+            }
         }
         return sum;
     }

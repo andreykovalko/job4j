@@ -1,4 +1,4 @@
-package ru.max3Numbers;
+package ru.max3numbers;
 
         import org.junit.Test;
         import static org.hamcrest.core.Is.is;
@@ -18,7 +18,7 @@ public class Max3NumbersTest {
     @Test
     public void whenThirdMax() {
         Max3Numbers maxNumber = new Max3Numbers();
-        int result = maxNumber.max(1,2, 3);
+        int result = maxNumber.max(1, 2, 3);
         assertThat(result, is(3));
     }
 
@@ -32,14 +32,14 @@ public class Max3NumbersTest {
     @Test
     public void whenSecondMax() {
         Max3Numbers maxNumber = new Max3Numbers();
-        int result = maxNumber.max(1,3, 2);
+        int result = maxNumber.max(1, 3, 2);
         assertThat(result, is(3));
     }
 
     @Test
     public void whenAllSame() {
         Max3Numbers maxNumber = new Max3Numbers();
-        int result = maxNumber.max(1,1, 1);
+        int result = maxNumber.max(1, 1, 1);
         assertThat(result, is(1));
     }
 

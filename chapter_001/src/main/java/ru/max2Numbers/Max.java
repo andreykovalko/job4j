@@ -1,4 +1,4 @@
-package ru.max2Numbers;
+package ru.max2numbers;
 
 /**
  * @author Andrey Kovalko (kovalkoandrey1983@mail.ru)
@@ -12,7 +12,7 @@ public class Max {
      * @param firstNumber, secondNumber.
      * @return maximum.
      */
-    public int max (int firstNumber, int secondNumber) {
+    public int max(int firstNumber, int secondNumber) {
         int maximum = firstNumber > secondNumber ? firstNumber : secondNumber;
         return maximum;
     }

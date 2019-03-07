@@ -1,4 +1,4 @@
-package ru.dummyBot;
+﻿package ru.dummybot;
 
 /**
  *
@@ -14,7 +14,7 @@ public class DummyBot {
      * @return Answer.
      */
     public String  answerMethod(String question) {
-        String answer = "";
+        String answer;
         if ("Привет, Бот.".equals(question)) {
             answer = "Привет, умник.";
         } else if ("Пока.".equals(question)) {

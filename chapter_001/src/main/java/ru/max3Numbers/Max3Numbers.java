@@ -1,4 +1,4 @@
-package ru.max3Numbers;
+package ru.max3numbers;
 
 /**
  * @author Andrey Kovalko (kovalkoandrey1983@mail.ru)
@@ -14,7 +14,7 @@ public class Max3Numbers {
      * @param thirdNumber
      * @return maximum.
      */
-    public int max (int firstNumber, int secondNumber, int thirdNumber) {
+    public int max(int firstNumber, int secondNumber, int thirdNumber) {
         int maximumFirstSecond = firstNumber > secondNumber ? firstNumber : secondNumber;
         int maximum = maximumFirstSecond > thirdNumber ? maximumFirstSecond : thirdNumber;
         return maximum;

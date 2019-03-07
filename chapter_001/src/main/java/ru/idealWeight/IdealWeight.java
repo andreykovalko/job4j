@@ -1,4 +1,4 @@
-package ru.idealWeight;
+package ru.idealweight;
 
 /**
  * Evaluation the best body mass index.
