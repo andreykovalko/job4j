@@ -23,6 +23,13 @@ public class TriangleTest {
         assertThat(resultSquare, closeTo(expected, 0.1));
     }
 
+    @Test
+    public void whenSetWrongThenResultMinusOne() {
+        Triangle triangle = new Triangle();
+        double resultSquare = triangle.area(1, 1, 2, 2, 3, 3);
+        double expected = -1D;
+        assertThat(resultSquare, closeTo(expected, 0.1));
+    }
 
 
 }
