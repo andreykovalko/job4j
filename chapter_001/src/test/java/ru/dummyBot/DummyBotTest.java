@@ -1,4 +1,4 @@
-﻿package ru.dummybot;
+package ru.dummybot;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
@@ -35,8 +35,4 @@ public class DummyBotTest {
         String result = bot.answerMethod("Я разговариваю с человеком или с машиной? ");
         assertThat(result, is("Это ставит меня в тупик. Задайте другой вопрос."));
     }
-
-
-
-
 }

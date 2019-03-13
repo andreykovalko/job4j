@@ -71,31 +71,23 @@ public class Logic {
         int[][] table = this.convert();
 
         for (int i = 0; i < table.length ; i++) {
-            int countHorizont = 0;
+            int countHorizont = 0, countVertical = 0;
             for (int j = 0; j < table.length ; j++) {
                 if (table[i][j] == 1) {
                   countHorizont++;
+                }
+                if (table[j][i] == 1) {
+                    countVertical++;
                 }
             }
             if (countHorizont == table.length) {
                 result = true;
                 break;
-            }
-        }
-
-        for (int i = 0; i < table.length ; i++) {
-            int countVertical = 0;
-            for (int j = 0; j < table.length ; j++) {
-                if (table[j][i] == 1) {
-                    countVertical++;
-                }
-            }
-            if (countVertical == table.length) {
+            } else if (countVertical == table.length) {
                 result = true;
                 break;
             }
         }
-
         return result;
     }
 

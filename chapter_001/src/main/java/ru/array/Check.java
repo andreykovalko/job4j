@@ -13,18 +13,12 @@ public class Check {
      * @return Reversed result true or false.
      */
     public boolean mono(boolean[] array) {
-        int counterTrue = 0, counterFalse = 0;
+        boolean result = true;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == true) {
-                counterTrue++;
-            } else {
-                counterFalse++;
+            if (array[0] != array[i]) {
+                result = false;
             }
         }
-        if (counterTrue == array.length || counterFalse == array.length) {
-            return true;
-        } else {
-            return  false;
-        }
+        return result;
     }
 }

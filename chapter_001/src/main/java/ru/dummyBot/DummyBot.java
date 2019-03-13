@@ -1,7 +1,6 @@
-﻿package ru.dummybot;
+package ru.dummybot;
 
 /**
- *
  * @author Andrey Kovalko (kovalkoandrey1983@mail.ru)
  * @version $Id$
  * @since 0.1
