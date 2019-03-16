@@ -9,10 +9,18 @@ public class Doctor extends Profession {
     /**
      * Method cure.
      * Doctor cure patient.
-     * @param person doctor's patient.
+     * @param patient doctor's patient.
      */
-    public void cure(Patient person) {
+    public void cure(Patient patient) {
 
+    }
+    /**
+     * Method heal.
+     * Get patient diagnose.
+     * @param patient doctor's patient.
+     */
+    public Diagnose heal(Patient patient) {
+       return patient.getDiagnose();
     }
 
 }

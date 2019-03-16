@@ -6,5 +6,21 @@ package ru.createclasses;
  * @since 0.1
  */
 public class Patient {
-    public String name;
+    private String name;
+    private Diagnose diagnose;
+
+    /**
+     * Method getName.
+     * Returns name of patient.
+     */
+    public String getName() {
+        return name;
+    }
+    /**
+     * Method getDiagnose.
+     * Get patient diagnose.
+     */
+    public Diagnose getDiagnose() {
+        return this.diagnose;
+    }
 }

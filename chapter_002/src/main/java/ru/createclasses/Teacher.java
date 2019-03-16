@@ -11,7 +11,15 @@ public class Teacher extends Profession {
      * Teacher trains student.
      * @param student teacher's student.
      */
-    public void cure(Student student) {
+    public void teachBaseLessons(Student student) {
+    }
+    /**
+     * Method teachExtraLessons.
+     * Teacher gives addition classes for student.
+     * @param student .
+     * @param numhours amount of extra lessons
+     */
+    public void teachExtraLessons(Student student, int numhours) {
 
     }
 

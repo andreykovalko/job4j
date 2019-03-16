@@ -14,5 +14,13 @@ public class Engineer extends  Profession {
     public void build(House house) {
 
     }
+    /**
+     * Method useOutline.
+     * Engineer uses outline of the house.
+     * @param house building on which works engineer.
+     */
+    public void useOutline(House house) {
+
+    }
 
 }

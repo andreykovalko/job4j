@@ -6,6 +6,21 @@ package ru.createclasses;
  * @since 0.1
  */
 public class Profession {
-    public String name;
-    public String profession;
+    private String name;
+    private String profession;
+
+    /**
+     * Method getName.
+     * Returns name of patient.
+     */
+    public String getName() {
+        return this.name;
+    }
+    /**
+     * Method getProfession.
+     * Returns profession.
+     */
+    public String getProfession() {
+        return this.profession;
+    }
 }
