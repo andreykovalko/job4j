@@ -20,28 +20,18 @@ public class Exam {
      */
     public int[] connectSortedArrays(int[] arrayFirst, int[] arraySecond) {
         int[] arrayCommon = new int[arrayFirst.length + arraySecond.length];
-        int i = 0, j = 0, countCommon = 0;
+        int i = 0, j = 0, countcommon = 0;
         while (i < arrayFirst.length && j < arraySecond.length) {
             if (arrayFirst[i] < arraySecond[j]) {
-                arrayCommon[countCommon] = arrayFirst[i];
+                arrayCommon[countcommon++] = arrayFirst[i];
                 i++;
             } else {
-                arrayCommon[countCommon] = arraySecond[j];
+                arrayCommon[countcommon++] = arraySecond[j];
                 j++;
             }
-            countCommon++;
         }
-        while (i < arrayFirst.length) {
-            arrayCommon[countCommon] = arrayFirst[i];
-            i++;
-            countCommon++;
-        }
-        while (j < arraySecond.length) {
-            arrayCommon[countCommon] = arraySecond[j];
-            j++;
-            countCommon++;
-        }
-
+        System.arraycopy(arrayFirst, i, arrayCommon, countcommon, (arrayFirst.length - i));
+        System.arraycopy(arraySecond, j, arrayCommon, countcommon, (arraySecond.length - j));
         return arrayCommon;
     }
 }

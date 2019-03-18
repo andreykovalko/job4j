@@ -33,5 +33,5 @@ public class ExamTest {
         int[] result = examine.connectSortedArrays(arrayfirst, arraysecond);
         int[] expect = new int[] {1, 2, 3, 4, 5, 6, 8};
         assertThat(result, is(expect));
-    }
+        }
     }
