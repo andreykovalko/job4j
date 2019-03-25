@@ -14,24 +14,31 @@ public class Exam {
     /**
      * Method connectSortedArrays.
      * Connect two sorted arrays.
-     * @param arrayFirst sorted array of integer  elements.
-     * @param arraySecond sorted array of integer  elements.
-     * @return array sorted with bubble method.
+     * @param arfirst sorted array of integer  elements.
+     * @param arsecond sorted array of integer  elements.
+     * @return sorted array consist of arfirst and arsecond.
      */
-    public int[] connectSortedArrays(int[] arrayFirst, int[] arraySecond) {
-        int[] arrayCommon = new int[arrayFirst.length + arraySecond.length];
-        int i = 0, j = 0, countcommon = 0;
-        while (i < arrayFirst.length && j < arraySecond.length) {
-            if (arrayFirst[i] < arraySecond[j]) {
-                arrayCommon[countcommon++] = arrayFirst[i];
+    public int[] connectSortedArrays(int[] arfirst, int[] arsecond) {
+        int[] arcommon = new int[arfirst.length + arsecond.length];
+        int i = 0, j = 0, count = 0;
+        while (count < arcommon.length) {
+            if (i < arfirst.length && j < arsecond.length) {
+                if (arfirst[i] < arsecond[j]) {
+                    arcommon[count++] = arfirst[i];
+                    i++;
+                } else {
+                    arcommon[count++] = arsecond[j];
+                    j++;
+                }
+            }
+           if (i == arfirst.length) {
+               arcommon[count++] = arsecond[j];
+               j++;
+           } else if (j == arsecond.length) {
+                arcommon[count++] = arsecond[i];
                 i++;
-            } else {
-                arrayCommon[countcommon++] = arraySecond[j];
-                j++;
             }
         }
-        System.arraycopy(arrayFirst, i, arrayCommon, countcommon, (arrayFirst.length - i));
-        System.arraycopy(arraySecond, j, arrayCommon, countcommon, (arraySecond.length - j));
-        return arrayCommon;
+        return arcommon;
     }
 }
